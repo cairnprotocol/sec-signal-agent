@@ -1,0 +1,21 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: V.F. Corporation
+Ticker: VFC
+CIK: 0000103379
+Form type: 8-K
+Filing date: 2023-12-18
+Accession/source reference: 0000950123-23-011228
+Filing section: Item 1.05 Material Cybersecurity Incidents
+Source URL: https://www.sec.gov/Archives/edgar/data/103379/000095012323011228/d659095d8k.htm
+Source type: public_edgar_preparsed_excerpt
+Verification status: verified_public_edgar_excerpt
+Industry group: Other
+Corpus segment: cross_industry_edgar_examples
+
+Excerpt:
+On December 13, 2023, VF Corporation (“VF” or the “Company”) detected unauthorized occurrences on a portion of its information technology (IT) systems. Upon detecting the unauthorized occurrences, the Company immediately began taking steps to contain, assess and remediate the incident, including beginning an investigation with leading external cybersecurity experts, activating its incident response plan, and shutting down some systems.
+The threat actor disrupted the Company’s business operations by encrypting some IT systems, and stole data from the Company, including personal data. The Company is working to bring the impacted portions of its IT systems back online and implement workarounds for certain offline operations with the aim of reducing disruption to its ability to serve its retail and brand e-commerce consumers and wholesale customers.
+VF-operated retail stores globally are open, and consumers can purchase available merchandise, but VF is experiencing certain operational disruptions. Consumers are able to place orders on most of the brand e-commerce sites globally, however, the Company’s ability to fulfill orders is currently impacted.

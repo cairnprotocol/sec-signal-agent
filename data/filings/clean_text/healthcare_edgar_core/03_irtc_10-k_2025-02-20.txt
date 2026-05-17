@@ -1,0 +1,18 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: iRhythm Technologies, Inc.
+Ticker: IRTC
+CIK: 0001388658
+Form type: 10-K
+Filing date: 2025-02-20
+Accession/source reference: 0001388658-25-000028
+Filing section: Business / Third-Party Reimbursement
+Source URL: https://www.sec.gov/Archives/edgar/data/1388658/000138865825000028/irtc-20241231.htm
+Source type: public_edgar_preparsed_excerpt
+Industry group: Healthcare
+Corpus segment: healthcare_edgar_core
+
+Excerpt:
+We receive revenue for the Zio Services primarily from third-party payors, which include commercial payors and government agencies, such as the Centers for Medicare & Medicaid Services (“CMS”). Third-party payors require us to identify the service for which we are seeking reimbursement by using a Current Procedural Terminology (“CPT”) code set maintained by the American Medical Association (“AMA”). These CPT codes are subject to periodic change and update, which will impact the reimbursement rates for our Zio Services. For the year ended December 31, 2024, we received approximately 84% of our revenue through third-party payors, which includes approximately 24% of our total revenue from the Medicare program.

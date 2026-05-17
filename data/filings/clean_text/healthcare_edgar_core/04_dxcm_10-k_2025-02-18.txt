@@ -1,0 +1,18 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: DexCom, Inc.
+Ticker: DXCM
+CIK: 0001093557
+Form type: 10-K
+Filing date: 2025-02-18
+Accession/source reference: 0001093557-25-000036
+Filing section: Risk Factors / Risks Related to Pricing and Reimbursement
+Source URL: https://www.sec.gov/Archives/edgar/data/1093557/000109355725000036/dxcm-20241231.htm
+Source type: public_edgar_preparsed_excerpt
+Industry group: Healthcare
+Corpus segment: healthcare_edgar_core
+
+Excerpt:
+Although many third-party payors have adopted some form of coverage policy for continuous glucose monitoring devices, our products do not always have such coverage, including simple broad-based contractual coverage with third-party payors, and we frequently experience administrative challenges in obtaining coverage or reimbursement for our products. If we are unable to obtain adequately broad coverage or reimbursement for our products or any future products from third-party payors, our revenue may be negatively impacted. As a medical device company, reimbursement from government and/or commercial third-party healthcare payors, including Medicare and Medicaid, is an important element of our success.

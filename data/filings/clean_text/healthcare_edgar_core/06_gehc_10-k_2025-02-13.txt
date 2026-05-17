@@ -1,0 +1,18 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: GE HealthCare Technologies Inc.
+Ticker: GEHC
+CIK: 0001932393
+Form type: 10-K
+Filing date: 2025-02-13
+Accession/source reference: 0001932393-25-000005
+Filing section: Risk Factors / Industry and Economic Risks
+Source URL: https://www.sec.gov/Archives/edgar/data/1932393/000193239325000005/gehc-20241231.htm
+Source type: public_edgar_preparsed_excerpt
+Industry group: Healthcare
+Corpus segment: healthcare_edgar_core
+
+Excerpt:
+Efforts by public and private payers to control the growth of healthcare costs may lead to lower reimbursements or increased utilization controls related to the use of our products by healthcare providers, which may affect the price of and demand for our products, services, or solutions. Sales of many of our offerings directly or indirectly depend on the availability of reimbursement and the amount of reimbursement that our customers may seek from various third-party payers, including government programs, authorities, or agencies (e.g., Medicare and Medicaid in the United States), and private health plans. In general, employers and third-party payers, particularly in the United States, have become increasingly cost-conscious, with higher deductibles imposed in many medical plans.

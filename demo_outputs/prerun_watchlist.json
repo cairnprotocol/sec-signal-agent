@@ -1,0 +1,1290 @@
+[
+  {
+    "account_id": "demo-entity-syk",
+    "account_name": "Stryker Corporation",
+    "ticker": "SYK",
+    "filing_type": "8-K",
+    "filing_date": "2026-03-11",
+    "trigger_type": "data_privacy_security_risk",
+    "urgency_tier": "tier_1",
+    "novelty": "unknown",
+    "final_score": 0.859,
+    "rank_bucket": "hot",
+    "primary_solution": "Trust & Diligence",
+    "secondary_solution": "Privacy / security disclosure",
+    "competitor_context": "Diligence packet",
+    "review_lane": "Trust & Diligence",
+    "scenario_label": "Privacy / security disclosure",
+    "primary_user": "Trust/Security, Compliance, Quality reviewer",
+    "deliverable_type": "Diligence packet",
+    "why_now": "Stryker Corporation disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+    "recommended_action": "Draft a diligence packet that summarizes Stryker Corporation's filing event and gives the Trust lead partner-ready control evidence prompts.",
+    "owner": "Trust Review Team",
+    "workflow_queue": "Trust & Diligence",
+    "territory": "Trust & Diligence",
+    "evidence_quotes": [
+      "On March 11, 2026, Stryker Corporation (“we” or the “Company”) identified a cybersecurity incident affecting certain information technology systems of the Company that has resulted in a global disruption to the Company’s Microsoft environment. Upon detection, the Company activated its cybersecurity response plan and launched an investigation internally with the support of external advisors and cybersecurity experts to assess and to contain the threat."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "SYK"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "ticker": "SYK"
+        },
+        "result_summary": "Mapped to review lane: Trust & Diligence",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "filing_date": "2026-03-11"
+        },
+        "result_summary": "Computed priority score: 0.859",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
+          "review_lane": "Trust & Diligence"
+        },
+        "result_summary": "Stryker Corporation disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "trust_diligence",
+      "privacy_security",
+      "security_diligence"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/310764/000119312526102460/d76279d8k.htm",
+    "accession_number": "0001193125-26-102460",
+    "filing_section": "Item 8.01 Other Events",
+    "industry_group": "Healthcare",
+    "corpus_segment": "healthcare_edgar_core",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "demo-entity-ufpt",
+    "account_name": "UFP Technologies Inc.",
+    "ticker": "UFPT",
+    "filing_type": "8-K",
+    "filing_date": "2026-02-24",
+    "trigger_type": "data_privacy_security_risk",
+    "urgency_tier": "tier_1",
+    "novelty": "unknown",
+    "final_score": 0.859,
+    "rank_bucket": "hot",
+    "primary_solution": "Trust & Diligence",
+    "secondary_solution": "Privacy / security disclosure",
+    "competitor_context": "Diligence packet",
+    "review_lane": "Trust & Diligence",
+    "scenario_label": "Privacy / security disclosure",
+    "primary_user": "Trust/Security, Compliance, Quality reviewer",
+    "deliverable_type": "Diligence packet",
+    "why_now": "UFP Technologies Inc. disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+    "recommended_action": "Draft a diligence packet that summarizes UFP Technologies Inc.'s filing event and gives the Trust lead partner-ready control evidence prompts.",
+    "owner": "Trust Review Team",
+    "workflow_queue": "Trust & Diligence",
+    "territory": "Trust & Diligence",
+    "evidence_quotes": [
+      "On or about February 14, 2026, UFP Technologies, Inc. (the “Company”) detected suspicious activity involving its information technology (“IT”) systems."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "UFPT"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "ticker": "UFPT"
+        },
+        "result_summary": "Mapped to review lane: Trust & Diligence",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "filing_date": "2026-02-24"
+        },
+        "result_summary": "Computed priority score: 0.859",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
+          "review_lane": "Trust & Diligence"
+        },
+        "result_summary": "UFP Technologies Inc. disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "trust_diligence",
+      "privacy_security",
+      "security_diligence"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/914156/000162828026011152/ufpt-20260219.htm",
+    "accession_number": "0001628280-26-011152",
+    "filing_section": "Item 1.05 Material Cybersecurity Incidents",
+    "industry_group": "Other",
+    "corpus_segment": "cross_industry_edgar_examples",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "edgar-healthcare-omda",
+    "account_name": "Omada Health, Inc.",
+    "ticker": "OMDA",
+    "filing_type": "10-K",
+    "filing_date": "2026-03-06",
+    "trigger_type": "operating_scale_or_platform_change",
+    "urgency_tier": "tier_2",
+    "novelty": "unknown",
+    "final_score": 0.766,
+    "rank_bucket": "warm",
+    "primary_solution": "Commercial Signal",
+    "secondary_solution": "Platform / go-to-market change",
+    "competitor_context": "Partner brief",
+    "review_lane": "Commercial Signal",
+    "scenario_label": "Platform / go-to-market change",
+    "primary_user": "Partnerships / Commercial Strategy",
+    "deliverable_type": "Partner brief",
+    "why_now": "Omada Health, Inc. describes platform, channel, or go-to-market change that affects buyer priorities. Partnerships should use this as a brief for account planning, platform discussion, or outreach timing.",
+    "recommended_action": "Refresh the account plan to connect Omada Health, Inc.'s operating change with a concrete Partnerships follow-up angle.",
+    "owner": "Partnerships Review Team",
+    "workflow_queue": "Commercial Signal",
+    "territory": "Commercial Signal",
+    "evidence_quotes": [
+      "Our growth strategy is centered on expanding the number of individuals covered for participation in one or more of our programs by our paying customers, which we call “covered lives,” as well as improving enrollment effectiveness and driving sustained member engagement. We seek to increase the number of individuals with access to our programs by offering multiple products across diverse end markets, deepening relationships with employers, health plans, and pharmacy benefit managers, and expanding distribution through a scalable, diversified go-to-market model."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "OMDA"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "operating_scale_or_platform_change",
+          "ticker": "OMDA"
+        },
+        "result_summary": "Mapped to review lane: Commercial Signal",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "operating_scale_or_platform_change",
+          "filing_date": "2026-03-06"
+        },
+        "result_summary": "Computed priority score: 0.766",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes operating scale, platform, workflow, or integration change.",
+          "review_lane": "Commercial Signal"
+        },
+        "result_summary": "Omada Health, Inc. describes platform, channel, or go-to-market change that affects buyer priorities. Partnerships should use this as a brief for account planning, platform discussion, or outreach timing.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "commercial_signal",
+      "platform_change",
+      "platform_systems",
+      "partnerships"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1611115/000162828026015637/omda-20251231.htm",
+    "accession_number": "0001628280-26-015637",
+    "filing_section": "Business / Scaled, Diversified Go-to-Market Model",
+    "industry_group": "Healthcare",
+    "corpus_segment": "healthcare_edgar_core",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "demo-entity-st",
+    "account_name": "Sensata Technologies Holding plc",
+    "ticker": "ST",
+    "filing_type": "8-K",
+    "filing_date": "2025-04-09",
+    "trigger_type": "data_privacy_security_risk",
+    "urgency_tier": "tier_1",
+    "novelty": "unknown",
+    "final_score": 0.649,
+    "rank_bucket": "warm",
+    "primary_solution": "Trust & Diligence",
+    "secondary_solution": "Privacy / security disclosure",
+    "competitor_context": "Diligence packet",
+    "review_lane": "Trust & Diligence",
+    "scenario_label": "Privacy / security disclosure",
+    "primary_user": "Trust/Security, Compliance, Quality reviewer",
+    "deliverable_type": "Diligence packet",
+    "why_now": "Sensata Technologies Holding plc disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+    "recommended_action": "Draft a diligence packet that summarizes Sensata Technologies Holding plc's filing event and gives the Trust lead partner-ready control evidence prompts.",
+    "owner": "Trust Review Team",
+    "workflow_queue": "Trust & Diligence",
+    "territory": "Trust & Diligence",
+    "evidence_quotes": [
+      "On April 6, 2025, Sensata Technologies Holding plc (the “Company”) experienced a ransomware incident that has encrypted certain devices in the Company’s network. Upon discovery, Sensata immediately activated its response protocols, implemented containment measures, including proactively taking its network offline, and launched an investigation with the assistance of third-party cybersecurity professionals."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "ST"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "ticker": "ST"
+        },
+        "result_summary": "Mapped to review lane: Trust & Diligence",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "filing_date": "2025-04-09"
+        },
+        "result_summary": "Computed priority score: 0.649",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
+          "review_lane": "Trust & Diligence"
+        },
+        "result_summary": "Sensata Technologies Holding plc disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "trust_diligence",
+      "privacy_security",
+      "security_diligence"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1477294/000147729425000047/st-20250406.htm",
+    "accession_number": "0001477294-25-000047",
+    "filing_section": "Item 1.05 Material Cybersecurity Incidents",
+    "industry_group": "Other",
+    "corpus_segment": "cross_industry_edgar_examples",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "demo-entity-dva",
+    "account_name": "DaVita Inc.",
+    "ticker": "DVA",
+    "filing_type": "8-K",
+    "filing_date": "2025-04-14",
+    "trigger_type": "data_privacy_security_risk",
+    "urgency_tier": "tier_1",
+    "novelty": "unknown",
+    "final_score": 0.649,
+    "rank_bucket": "warm",
+    "primary_solution": "Trust & Diligence",
+    "secondary_solution": "Privacy / security disclosure",
+    "competitor_context": "Diligence packet",
+    "review_lane": "Trust & Diligence",
+    "scenario_label": "Privacy / security disclosure",
+    "primary_user": "Trust/Security, Compliance, Quality reviewer",
+    "deliverable_type": "Diligence packet",
+    "why_now": "DaVita Inc. disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+    "recommended_action": "Draft a diligence packet that summarizes DaVita Inc.'s filing event and gives the Trust lead partner-ready control evidence prompts.",
+    "owner": "Trust Review Team",
+    "workflow_queue": "Trust & Diligence",
+    "territory": "Trust & Diligence",
+    "evidence_quotes": [
+      "On April 12, 2025, DaVita Inc. (the “Company” or “we”) became aware of a ransomware incident that has encrypted certain elements of our network."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "DVA"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "ticker": "DVA"
+        },
+        "result_summary": "Mapped to review lane: Trust & Diligence",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "filing_date": "2025-04-14"
+        },
+        "result_summary": "Computed priority score: 0.649",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
+          "review_lane": "Trust & Diligence"
+        },
+        "result_summary": "DaVita Inc. disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "trust_diligence",
+      "privacy_security",
+      "security_diligence"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/927066/000119312525079593/d948299d8k.htm",
+    "accession_number": "0001193125-25-079593",
+    "filing_section": "Item 8.01 Other Events",
+    "industry_group": "Healthcare",
+    "corpus_segment": "healthcare_edgar_core",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "edgar-healthcare-docs",
+    "account_name": "Doximity, Inc.",
+    "ticker": "DOCS",
+    "filing_type": "10-K",
+    "filing_date": "2025-05-20",
+    "trigger_type": "operating_scale_or_platform_change",
+    "urgency_tier": "tier_2",
+    "novelty": "unknown",
+    "final_score": 0.616,
+    "rank_bucket": "warm",
+    "primary_solution": "Commercial Signal",
+    "secondary_solution": "Platform / go-to-market change",
+    "competitor_context": "Partner brief",
+    "review_lane": "Commercial Signal",
+    "scenario_label": "Platform / go-to-market change",
+    "primary_user": "Partnerships / Commercial Strategy",
+    "deliverable_type": "Partner brief",
+    "why_now": "Doximity, Inc. describes platform, channel, or go-to-market change that affects buyer priorities. Partnerships should use this as a brief for account planning, platform discussion, or outreach timing.",
+    "recommended_action": "Refresh the account plan to connect Doximity, Inc.'s operating change with a concrete Partnerships follow-up angle.",
+    "owner": "Partnerships Review Team",
+    "workflow_queue": "Commercial Signal",
+    "territory": "Commercial Signal",
+    "evidence_quotes": [
+      "We are the leading digital platform for U.S. medical professionals, as measured by the number of members."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "DOCS"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "operating_scale_or_platform_change",
+          "ticker": "DOCS"
+        },
+        "result_summary": "Mapped to review lane: Commercial Signal",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "operating_scale_or_platform_change",
+          "filing_date": "2025-05-20"
+        },
+        "result_summary": "Computed priority score: 0.616",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes operating scale, platform, workflow, or integration change.",
+          "review_lane": "Commercial Signal"
+        },
+        "result_summary": "Doximity, Inc. describes platform, channel, or go-to-market change that affects buyer priorities. Partnerships should use this as a brief for account planning, platform discussion, or outreach timing.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "commercial_signal",
+      "platform_change",
+      "platform_systems",
+      "partnerships"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1516513/000151651325000056/docs-20250331.htm",
+    "accession_number": "0001516513-25-000056",
+    "filing_section": "Business / Overview",
+    "industry_group": "Healthcare",
+    "corpus_segment": "healthcare_edgar_core",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "edgar-healthcare-tdoc",
+    "account_name": "Teladoc Health, Inc.",
+    "ticker": "TDOC",
+    "filing_type": "10-K",
+    "filing_date": "2025-02-27",
+    "trigger_type": "data_privacy_security_risk",
+    "urgency_tier": "tier_2",
+    "novelty": "unknown",
+    "final_score": 0.609,
+    "rank_bucket": "warm",
+    "primary_solution": "Trust & Diligence",
+    "secondary_solution": "Privacy / security disclosure",
+    "competitor_context": "Diligence packet",
+    "review_lane": "Trust & Diligence",
+    "scenario_label": "Privacy / security disclosure",
+    "primary_user": "Trust/Security, Compliance, Quality reviewer",
+    "deliverable_type": "Diligence packet",
+    "why_now": "Teladoc Health, Inc. disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+    "recommended_action": "Draft a diligence packet that summarizes Teladoc Health, Inc.'s filing event and gives the Trust lead partner-ready control evidence prompts.",
+    "owner": "Trust Review Team",
+    "workflow_queue": "Trust & Diligence",
+    "territory": "Trust & Diligence",
+    "evidence_quotes": [
+      "There are numerous U.S. federal and state laws and regulations related to the privacy and security of personally identifiable information (“PII”), including health information."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "TDOC"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "ticker": "TDOC"
+        },
+        "result_summary": "Mapped to review lane: Trust & Diligence",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "filing_date": "2025-02-27"
+        },
+        "result_summary": "Computed priority score: 0.609",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
+          "review_lane": "Trust & Diligence"
+        },
+        "result_summary": "Teladoc Health, Inc. disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "trust_diligence",
+      "privacy_security",
+      "security_diligence",
+      "data_governance"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1477449/000147744925000005/tdoc-20241231.htm",
+    "accession_number": "0001477449-25-000005",
+    "filing_section": "Health Information Privacy and Security Laws",
+    "industry_group": "Healthcare",
+    "corpus_segment": "healthcare_edgar_core",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "edgar-healthcare-hcat",
+    "account_name": "Health Catalyst, Inc.",
+    "ticker": "HCAT",
+    "filing_type": "10-K",
+    "filing_date": "2025-02-26",
+    "trigger_type": "data_privacy_security_risk",
+    "urgency_tier": "tier_2",
+    "novelty": "unknown",
+    "final_score": 0.605,
+    "rank_bucket": "warm",
+    "primary_solution": "Trust & Diligence",
+    "secondary_solution": "Privacy / security disclosure",
+    "competitor_context": "Diligence packet",
+    "review_lane": "Trust & Diligence",
+    "scenario_label": "Privacy / security disclosure",
+    "primary_user": "Trust/Security, Compliance, Quality reviewer",
+    "deliverable_type": "Diligence packet",
+    "why_now": "Health Catalyst, Inc. disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+    "recommended_action": "Draft a diligence packet that summarizes Health Catalyst, Inc.'s filing event and gives the Trust lead partner-ready control evidence prompts.",
+    "owner": "Trust Review Team",
+    "workflow_queue": "Trust & Diligence",
+    "territory": "Trust & Diligence",
+    "evidence_quotes": [
+      "Our business is subject to extensive, complex, and rapidly changing federal and state laws and regulations, as well as international laws with respect to our international clients. Various federal and state agencies have discretion to issue regulations and interpret and enforce healthcare laws."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "HCAT"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "ticker": "HCAT"
+        },
+        "result_summary": "Mapped to review lane: Trust & Diligence",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "filing_date": "2025-02-26"
+        },
+        "result_summary": "Computed priority score: 0.605",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
+          "review_lane": "Trust & Diligence"
+        },
+        "result_summary": "Health Catalyst, Inc. disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "trust_diligence",
+      "privacy_security",
+      "security_diligence",
+      "data_governance"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1636422/000163642225000028/hcat-20241231.htm",
+    "accession_number": "0001636422-25-000028",
+    "filing_section": "Government Regulation / Data Privacy and Security Laws",
+    "industry_group": "Healthcare",
+    "corpus_segment": "healthcare_edgar_core",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "edgar-healthcare-irtc",
+    "account_name": "iRhythm Technologies, Inc.",
+    "ticker": "IRTC",
+    "filing_type": "10-K",
+    "filing_date": "2025-02-20",
+    "trigger_type": "reimbursement_or_commercial_model_pressure",
+    "urgency_tier": "tier_2",
+    "novelty": "unknown",
+    "final_score": 0.596,
+    "rank_bucket": "warm",
+    "primary_solution": "Commercial Signal",
+    "secondary_solution": "Payer / commercial model pressure",
+    "competitor_context": "Partner brief",
+    "review_lane": "Commercial Signal",
+    "scenario_label": "Payer / commercial model pressure",
+    "primary_user": "Partnerships / Commercial Strategy",
+    "deliverable_type": "Partner brief",
+    "why_now": "iRhythm Technologies, Inc. describes payer, reimbursement, or commercial model pressure that affects buyer priorities. Partnerships should use this as a brief for account planning, reimbursement discussion, or outreach timing.",
+    "recommended_action": "Draft a one-page partner brief that links iRhythm Technologies, Inc.'s reimbursement pressure to account priority for the Commercial Strategy lead.",
+    "owner": "Commercial Strategy Team",
+    "workflow_queue": "Commercial Signal",
+    "territory": "Commercial Signal",
+    "evidence_quotes": [
+      "We receive revenue for the Zio Services primarily from third-party payors, which include commercial payors and government agencies, such as the Centers for Medicare & Medicaid Services (“CMS”). Third-party payors require us to identify the service for which we are seeking reimbursement by using a Current Procedural Terminology (“CPT”) code set maintained by the American Medical Association (“AMA”)."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "IRTC"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "ticker": "IRTC"
+        },
+        "result_summary": "Mapped to review lane: Commercial Signal",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "filing_date": "2025-02-20"
+        },
+        "result_summary": "Computed priority score: 0.596",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes payer, reimbursement, coverage, or commercial model pressure.",
+          "review_lane": "Commercial Signal"
+        },
+        "result_summary": "iRhythm Technologies, Inc. describes payer, reimbursement, or commercial model pressure that affects buyer priorities. Partnerships should use this as a brief for account planning, reimbursement discussion, or outreach timing.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "commercial_signal",
+      "reimbursement",
+      "commercial_model",
+      "payer_pressure"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1388658/000138865825000028/irtc-20241231.htm",
+    "accession_number": "0001388658-25-000028",
+    "filing_section": "Business / Third-Party Reimbursement",
+    "industry_group": "Healthcare",
+    "corpus_segment": "healthcare_edgar_core",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "edgar-healthcare-dxcm",
+    "account_name": "DexCom, Inc.",
+    "ticker": "DXCM",
+    "filing_type": "10-K",
+    "filing_date": "2025-02-18",
+    "trigger_type": "reimbursement_or_commercial_model_pressure",
+    "urgency_tier": "tier_2",
+    "novelty": "unknown",
+    "final_score": 0.596,
+    "rank_bucket": "warm",
+    "primary_solution": "Commercial Signal",
+    "secondary_solution": "Payer / commercial model pressure",
+    "competitor_context": "Partner brief",
+    "review_lane": "Commercial Signal",
+    "scenario_label": "Payer / commercial model pressure",
+    "primary_user": "Partnerships / Commercial Strategy",
+    "deliverable_type": "Partner brief",
+    "why_now": "DexCom, Inc. describes payer, reimbursement, or commercial model pressure that affects buyer priorities. Partnerships should use this as a brief for account planning, reimbursement discussion, or outreach timing.",
+    "recommended_action": "Draft a one-page partner brief that links DexCom, Inc.'s reimbursement pressure to account priority for the Commercial Strategy lead.",
+    "owner": "Partnerships Review Team",
+    "workflow_queue": "Commercial Signal",
+    "territory": "Commercial Signal",
+    "evidence_quotes": [
+      "Although many third-party payors have adopted some form of coverage policy for continuous glucose monitoring devices, our products do not always have such coverage, including simple broad-based contractual coverage with third-party payors, and we frequently experience administrative challenges in obtaining coverage or reimbursement for our products. If we are unable to obtain adequately broad coverage or reimbursement for our products or any future products from third-party payors, our revenue may be negatively impacted."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "DXCM"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "ticker": "DXCM"
+        },
+        "result_summary": "Mapped to review lane: Commercial Signal",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "filing_date": "2025-02-18"
+        },
+        "result_summary": "Computed priority score: 0.596",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes payer, reimbursement, coverage, or commercial model pressure.",
+          "review_lane": "Commercial Signal"
+        },
+        "result_summary": "DexCom, Inc. describes payer, reimbursement, or commercial model pressure that affects buyer priorities. Partnerships should use this as a brief for account planning, reimbursement discussion, or outreach timing.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "commercial_signal",
+      "reimbursement",
+      "commercial_model",
+      "payer_pressure"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1093557/000109355725000036/dxcm-20241231.htm",
+    "accession_number": "0001093557-25-000036",
+    "filing_section": "Risk Factors / Risks Related to Pricing and Reimbursement",
+    "industry_group": "Healthcare",
+    "corpus_segment": "healthcare_edgar_core",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "edgar-healthcare-gehc",
+    "account_name": "GE HealthCare Technologies Inc.",
+    "ticker": "GEHC",
+    "filing_type": "10-K",
+    "filing_date": "2025-02-13",
+    "trigger_type": "reimbursement_or_commercial_model_pressure",
+    "urgency_tier": "tier_2",
+    "novelty": "unknown",
+    "final_score": 0.596,
+    "rank_bucket": "warm",
+    "primary_solution": "Commercial Signal",
+    "secondary_solution": "Payer / commercial model pressure",
+    "competitor_context": "Partner brief",
+    "review_lane": "Commercial Signal",
+    "scenario_label": "Payer / commercial model pressure",
+    "primary_user": "Partnerships / Commercial Strategy",
+    "deliverable_type": "Partner brief",
+    "why_now": "GE HealthCare Technologies Inc. describes payer, reimbursement, or commercial model pressure that affects buyer priorities. Partnerships should use this as a brief for account planning, reimbursement discussion, or outreach timing.",
+    "recommended_action": "Draft a one-page partner brief that links GE HealthCare Technologies Inc.'s reimbursement pressure to account priority for the Commercial Strategy lead.",
+    "owner": "Commercial Strategy Team",
+    "workflow_queue": "Commercial Signal",
+    "territory": "Commercial Signal",
+    "evidence_quotes": [
+      "Efforts by public and private payers to control the growth of healthcare costs may lead to lower reimbursements or increased utilization controls related to the use of our products by healthcare providers, which may affect the price of and demand for our products, services, or solutions. Sales of many of our offerings directly or indirectly depend on the availability of reimbursement and the amount of reimbursement that our customers may seek from various third-party payers, including government programs, authorities, or agencies (e.g., Medicare and Medicaid in the United States), and private health plans."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "GEHC"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "ticker": "GEHC"
+        },
+        "result_summary": "Mapped to review lane: Commercial Signal",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "filing_date": "2025-02-13"
+        },
+        "result_summary": "Computed priority score: 0.596",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes payer, reimbursement, coverage, or commercial model pressure.",
+          "review_lane": "Commercial Signal"
+        },
+        "result_summary": "GE HealthCare Technologies Inc. describes payer, reimbursement, or commercial model pressure that affects buyer priorities. Partnerships should use this as a brief for account planning, reimbursement discussion, or outreach timing.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "commercial_signal",
+      "reimbursement",
+      "commercial_model",
+      "payer_pressure"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1932393/000193239325000005/gehc-20241231.htm",
+    "accession_number": "0001932393-25-000005",
+    "filing_section": "Risk Factors / Industry and Economic Risks",
+    "industry_group": "Healthcare",
+    "corpus_segment": "healthcare_edgar_core",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "demo-entity-unh",
+    "account_name": "UnitedHealth Group Incorporated",
+    "ticker": "UNH",
+    "filing_type": "10-K",
+    "filing_date": "2025-02-27",
+    "trigger_type": "data_privacy_security_risk",
+    "urgency_tier": "tier_2",
+    "novelty": "unknown",
+    "final_score": 0.585,
+    "rank_bucket": "warm",
+    "primary_solution": "Trust & Diligence",
+    "secondary_solution": "Privacy / security disclosure",
+    "competitor_context": "Diligence packet",
+    "review_lane": "Trust & Diligence",
+    "scenario_label": "Privacy / security disclosure",
+    "primary_user": "Trust/Security, Compliance, Quality reviewer",
+    "deliverable_type": "Diligence packet",
+    "why_now": "UnitedHealth Group Incorporated disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+    "recommended_action": "Draft a diligence packet that summarizes UnitedHealth Group Incorporated's filing event and gives the Trust lead partner-ready control evidence prompts.",
+    "owner": "Trust Review Team",
+    "workflow_queue": "Trust & Diligence",
+    "territory": "Trust & Diligence",
+    "evidence_quotes": [
+      "As previously announced, on February 21, 2024, we identified that cybercrime threat actors had gained access to certain Change Healthcare information technology systems. Upon detection of this outside threat, we isolated the impacted systems to protect our partners and customers."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "UNH"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "ticker": "UNH"
+        },
+        "result_summary": "Mapped to review lane: Trust & Diligence",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "filing_date": "2025-02-27"
+        },
+        "result_summary": "Computed priority score: 0.585",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
+          "review_lane": "Trust & Diligence"
+        },
+        "result_summary": "UnitedHealth Group Incorporated disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "trust_diligence",
+      "privacy_security",
+      "security_diligence"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/731766/000073176625000063/unh-20241231.htm",
+    "accession_number": "0000731766-25-000063",
+    "filing_section": "Change Healthcare Cyberattack",
+    "industry_group": "Healthcare",
+    "corpus_segment": "healthcare_edgar_core",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "edgar-healthcare-alhc",
+    "account_name": "Alignment Healthcare, Inc.",
+    "ticker": "ALHC",
+    "filing_type": "10-K",
+    "filing_date": "2025-02-27",
+    "trigger_type": "regulatory_compliance_pressure",
+    "urgency_tier": "tier_2",
+    "novelty": "unknown",
+    "final_score": 0.583,
+    "rank_bucket": "warm",
+    "primary_solution": "Trust & Diligence",
+    "secondary_solution": "Regulatory / compliance pressure",
+    "competitor_context": "Compliance readiness brief",
+    "review_lane": "Trust & Diligence",
+    "scenario_label": "Regulatory / compliance pressure",
+    "primary_user": "Trust/Security, Compliance, Quality reviewer",
+    "deliverable_type": "Diligence packet",
+    "why_now": "Alignment Healthcare, Inc. disclosed regulatory or quality pressure that could shape partner diligence or compliance review. Trust and Compliance teams should prepare comparable oversight evidence and partner Q&A before the issue comes up externally.",
+    "recommended_action": "Prepare a partner Q&A brief that summarizes Alignment Healthcare, Inc.'s filing event and the compliance or quality questions likely to surface in diligence.",
+    "owner": "Compliance Review Team",
+    "workflow_queue": "Trust & Diligence",
+    "territory": "Trust & Diligence",
+    "evidence_quotes": [
+      "A significant portion of our revenue relates, directly or indirectly, to the Medicare Advantage program, which accounted for substantially all of our total revenue for the year ended December 31, 2024. Participating in the Medicare Advantage program exposes us to various risks, as described further below."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "ALHC"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "regulatory_compliance_pressure",
+          "ticker": "ALHC"
+        },
+        "result_summary": "Mapped to review lane: Trust & Diligence",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "regulatory_compliance_pressure",
+          "filing_date": "2025-02-27"
+        },
+        "result_summary": "Computed priority score: 0.583",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes regulatory, compliance, reporting, or quality pressure.",
+          "review_lane": "Trust & Diligence"
+        },
+        "result_summary": "Alignment Healthcare, Inc. disclosed regulatory or quality pressure that could shape partner diligence or compliance review. Trust and Compliance teams should prepare comparable oversight evidence and partner Q&A before the issue comes up externally.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "trust_diligence",
+      "regulatory_compliance",
+      "quality_reporting"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1832466/000162828025008730/alhc-20241231.htm",
+    "accession_number": "0001628280-25-008730",
+    "filing_section": "Risk Factors / Medicare Advantage",
+    "industry_group": "Healthcare",
+    "corpus_segment": "healthcare_edgar_core",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "demo-entity-clx",
+    "account_name": "The Clorox Company",
+    "ticker": "CLX",
+    "filing_type": "8-K",
+    "filing_date": "2023-09-18",
+    "trigger_type": "data_privacy_security_risk",
+    "urgency_tier": "tier_1",
+    "novelty": "unknown",
+    "final_score": 0.572,
+    "rank_bucket": "warm",
+    "primary_solution": "Trust & Diligence",
+    "secondary_solution": "Privacy / security disclosure",
+    "competitor_context": "Diligence packet",
+    "review_lane": "Trust & Diligence",
+    "scenario_label": "Privacy / security disclosure",
+    "primary_user": "Trust/Security, Compliance, Quality reviewer",
+    "deliverable_type": "Diligence packet",
+    "why_now": "The Clorox Company disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+    "recommended_action": "Draft a diligence packet that summarizes The Clorox Company's filing event and gives the Trust lead partner-ready control evidence prompts.",
+    "owner": "Trust Review Team",
+    "workflow_queue": "Trust & Diligence",
+    "territory": "Trust & Diligence",
+    "evidence_quotes": [
+      "On Aug. 14, 2023, The Clorox Company (the “Company” or “Clorox”) announced that it had identified unauthorized activity on some of its Information Technology (IT) systems and took immediate steps to stop and remediate the activity, including taking certain systems offline."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "CLX"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "ticker": "CLX"
+        },
+        "result_summary": "Mapped to review lane: Trust & Diligence",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "filing_date": "2023-09-18"
+        },
+        "result_summary": "Computed priority score: 0.572",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
+          "review_lane": "Trust & Diligence"
+        },
+        "result_summary": "The Clorox Company disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "trust_diligence",
+      "privacy_security",
+      "security_diligence"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/21076/000120677423001133/clx4242401-8k.htm",
+    "accession_number": "0001206774-23-001133",
+    "filing_section": "Item 8.01 Other Events",
+    "industry_group": "Other",
+    "corpus_segment": "cross_industry_edgar_examples",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "demo-entity-vfc",
+    "account_name": "V.F. Corporation",
+    "ticker": "VFC",
+    "filing_type": "8-K",
+    "filing_date": "2023-12-18",
+    "trigger_type": "data_privacy_security_risk",
+    "urgency_tier": "tier_1",
+    "novelty": "unknown",
+    "final_score": 0.572,
+    "rank_bucket": "warm",
+    "primary_solution": "Trust & Diligence",
+    "secondary_solution": "Privacy / security disclosure",
+    "competitor_context": "Diligence packet",
+    "review_lane": "Trust & Diligence",
+    "scenario_label": "Privacy / security disclosure",
+    "primary_user": "Trust/Security, Compliance, Quality reviewer",
+    "deliverable_type": "Diligence packet",
+    "why_now": "V.F. Corporation disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+    "recommended_action": "Draft a diligence packet that summarizes V.F. Corporation's filing event and gives the Trust lead partner-ready control evidence prompts.",
+    "owner": "Trust Review Team",
+    "workflow_queue": "Trust & Diligence",
+    "territory": "Trust & Diligence",
+    "evidence_quotes": [
+      "On December 13, 2023, VF Corporation (“VF” or the “Company”) detected unauthorized occurrences on a portion of its information technology (IT) systems. Upon detecting the unauthorized occurrences, the Company immediately began taking steps to contain, assess and remediate the incident, including beginning an investigation with leading external cybersecurity experts, activating its incident response plan, and shutting down some systems."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "VFC"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "ticker": "VFC"
+        },
+        "result_summary": "Mapped to review lane: Trust & Diligence",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "data_privacy_security_risk",
+          "filing_date": "2023-12-18"
+        },
+        "result_summary": "Computed priority score: 0.572",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
+          "review_lane": "Trust & Diligence"
+        },
+        "result_summary": "V.F. Corporation disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "trust_diligence",
+      "privacy_security",
+      "security_diligence"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/103379/000095012323011228/d659095d8k.htm",
+    "accession_number": "0000950123-23-011228",
+    "filing_section": "Item 1.05 Material Cybersecurity Incidents",
+    "industry_group": "Other",
+    "corpus_segment": "cross_industry_edgar_examples",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  },
+  {
+    "account_id": "demo-entity-lw",
+    "account_name": "Lamb Weston Holdings Inc.",
+    "ticker": "LW",
+    "filing_type": "10-Q",
+    "filing_date": "2024-12-19",
+    "trigger_type": "operating_scale_or_platform_change",
+    "urgency_tier": "tier_2",
+    "novelty": "unknown",
+    "final_score": 0.536,
+    "rank_bucket": "monitor",
+    "primary_solution": "Commercial Signal",
+    "secondary_solution": "Platform / go-to-market change",
+    "competitor_context": "Partner brief",
+    "review_lane": "Commercial Signal",
+    "scenario_label": "Platform / go-to-market change",
+    "primary_user": "Partnerships / Commercial Strategy",
+    "deliverable_type": "Partner brief",
+    "why_now": "Lamb Weston Holdings Inc. describes platform, channel, or go-to-market change that affects buyer priorities. Partnerships should use this as a brief for account planning, platform discussion, or outreach timing.",
+    "recommended_action": "Refresh the account plan to connect Lamb Weston Holdings Inc.'s operating change with a concrete Partnerships follow-up angle.",
+    "owner": "Partnerships Review Team",
+    "workflow_queue": "Commercial Signal",
+    "territory": "Commercial Signal",
+    "evidence_quotes": [
+      "Investing activities used $484.9 million of cash in the first half of fiscal 2025, compared with $570.8 million in the same period in the prior year. Expenditures in both periods primarily related to our investments to expand our french fry capacity and other facility modernization efforts in China, the Netherlands, the U.S., and Argentina."
+    ],
+    "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
+    "tool_trace": [
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "LW"
+        },
+        "result_summary": "Loaded synthetic entity and workflow context.",
+        "reason": "Pre-run deterministic demo mode"
+      },
+      {
+        "tool_name": "get_product_fit",
+        "inputs": {
+          "trigger_type": "operating_scale_or_platform_change",
+          "ticker": "LW"
+        },
+        "result_summary": "Mapped to review lane: Commercial Signal",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "get_scoring",
+        "inputs": {
+          "trigger_type": "operating_scale_or_platform_change",
+          "filing_date": "2024-12-19"
+        },
+        "result_summary": "Computed priority score: 0.536",
+        "reason": "Deterministic demo packet generation"
+      },
+      {
+        "tool_name": "generate_why_now",
+        "inputs": {
+          "trigger_summary": "The filing excerpt describes operating scale, platform, workflow, or integration change.",
+          "review_lane": "Commercial Signal"
+        },
+        "result_summary": "Lamb Weston Holdings Inc. describes platform, channel, or go-to-market change that affects buyer priorities. Partnerships should use this as a brief for account planning, platform discussion, or outreach timing.",
+        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+      }
+    ],
+    "confidence_note": "Manual review recommended",
+    "rationale_tags": [
+      "commercial_signal",
+      "platform_change",
+      "platform_systems",
+      "partnerships"
+    ],
+    "source_type": "public_edgar_preparsed_excerpt",
+    "source_note": "Short, hand-curated, pre-parsed excerpt from a public EDGAR filing. The prototype does not implement full SEC HTML/XBRL parsing.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1679273/000167927324000087/lw-20241124.htm",
+    "accession_number": "0001679273-24-000087",
+    "filing_section": "Management's Discussion and Analysis",
+    "industry_group": "Other",
+    "corpus_segment": "cross_industry_edgar_examples",
+    "verification_status": "verified_public_edgar_excerpt",
+    "human_review_required": true
+  }
+]

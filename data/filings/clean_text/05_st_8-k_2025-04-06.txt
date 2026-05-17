@@ -1,0 +1,22 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: Sensata Technologies Holding plc
+Ticker: ST
+CIK: 0001477294
+Form type: 8-K
+Filing date: 2025-04-09
+Accession/source reference: 0001477294-25-000047
+Filing section: Item 1.05 Material Cybersecurity Incidents
+Source URL: https://www.sec.gov/Archives/edgar/data/1477294/000147729425000047/st-20250406.htm
+Source type: public_edgar_preparsed_excerpt
+Verification status: verified_public_edgar_excerpt
+Industry group: Other
+Corpus segment: cross_industry_edgar_examples
+
+Excerpt:
+On April 6, 2025, Sensata Technologies Holding plc (the “Company”) experienced a ransomware incident that has encrypted certain devices in the Company’s network. Upon discovery, Sensata immediately activated its response protocols, implemented containment measures, including proactively taking its network offline, and launched an investigation with the assistance of third-party cybersecurity professionals.
+In coordination with legal counsel, the Company has notified law enforcement about the matter and is supporting its investigation.
+The incident has temporarily impacted Sensata’s operations, including shipping, receiving, manufacturing production, and various other support functions. While the Company has implemented interim measures to allow for the restoration of certain functions, the timeline for a full restoration is not yet known. The preliminary investigation has identified evidence that files were taken from the Company’s environment.
+The Company is working to identify and review the files involved and will take additional actions as appropriate based on its review, including notifying individuals and regulatory authorities in accordance with applicable law.

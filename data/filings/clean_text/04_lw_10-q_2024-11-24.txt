@@ -1,0 +1,20 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: Lamb Weston Holdings, Inc.
+Ticker: LW
+CIK: 0001679273
+Form type: 10-Q
+Filing date: 2024-12-19
+Accession/source reference: 0001679273-24-000087
+Filing section: Management's Discussion and Analysis of Financial Condition and Results of Operations
+Source URL: https://www.sec.gov/Archives/edgar/data/1679273/000167927324000087/lw-20241124.htm
+Source type: public_edgar_preparsed_excerpt
+Verification status: verified_public_edgar_excerpt
+Industry group: Other
+Corpus segment: cross_industry_edgar_examples
+
+Excerpt:
+Investing activities used $484.9 million of cash in the first half of fiscal 2025, compared with $570.8 million in the same period in the prior year. Expenditures in both periods primarily related to our investments to expand our french fry capacity and other facility modernization efforts in China, the Netherlands, the U.S., and Argentina.
+The project in the Netherlands was completed during the second quarter of fiscal 2025, while the project in Argentina is on track to be completed by mid-calendar 2025. In connection with the Restructuring Plan, we decreased our estimate of capital expenditures in fiscal 2025 by $100 million to $750 million excluding acquisitions, which included pausing the next phase of our ERP build and implementation.

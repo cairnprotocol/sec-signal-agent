@@ -1,0 +1,22 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: UnitedHealth Group Incorporated
+Ticker: UNH
+CIK: 0000731766
+Form type: 10-K
+Filing date: 2025-02-27
+Accession/source reference: 0000731766-25-000063
+Filing section: Change Healthcare Cyberattack
+Source URL: https://www.sec.gov/Archives/edgar/data/731766/000073176625000063/unh-20241231.htm
+Source type: public_edgar_preparsed_excerpt
+Verification status: verified_public_edgar_excerpt
+Industry group: Healthcare
+Corpus segment: healthcare_edgar_core
+
+Excerpt:
+As previously announced, on February 21, 2024, we identified that cybercrime threat actors had gained access to certain Change Healthcare information technology systems. Upon detection of this outside threat, we isolated the impacted systems to protect our partners and customers.
+We have substantially mitigated the impact to consumers and care providers of the unprecedented cyberattack on the U.S. health system and restored or replaced the majority of the affected Change Healthcare services. To support care providers we provided interest-free loans of more than $9 billion through December 31, 2024.
+For the year ended December 31, 2024, we incurred $2.2 billion of direct response costs, including costs associated with providing interest-free loans; increased medical care expenditures, as we suspended some care management activities to help care providers with their workflow processes; network restoration; and notifications of impacted persons.
+Optum Insight also experienced estimated business disruption impacts of $867 million for the year ended December 31, 2024, reflecting lost revenue while maintaining full readiness of the affected Change Healthcare services. We expect to continue to incur direct response costs and experience business disruption impacts at a lesser extent in 2025 as we work to bring transaction volumes back to pre-event levels and win new business.

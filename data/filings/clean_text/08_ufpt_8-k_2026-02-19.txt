@@ -1,0 +1,23 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: UFP Technologies, Inc.
+Ticker: UFPT
+CIK: 0000914156
+Form type: 8-K
+Filing date: 2026-02-24
+Accession/source reference: 0001628280-26-011152
+Filing section: Item 1.05 Material Cybersecurity Incidents
+Source URL: https://www.sec.gov/Archives/edgar/data/914156/000162828026011152/ufpt-20260219.htm
+Source type: public_edgar_preparsed_excerpt
+Verification status: verified_public_edgar_excerpt
+Industry group: Other
+Corpus segment: cross_industry_edgar_examples
+
+Excerpt:
+On or about February 14, 2026, UFP Technologies, Inc. (the “Company”) detected suspicious activity involving its information technology (“IT”) systems. Upon detecting the issue, the Company began taking steps to assess, contain, and remediate the unauthorized activity, including isolating the affected systems and launching an investigation with the assistance of external cybersecurity advisors.
+Through the Company’s efforts, the Company believes that the third party responsible for this cybersecurity incident has been removed from the Company’s IT systems, and the Company’s ability to access information impacted by this incident has been restored in all material respects. The incident appears to have impacted many but not all of the Company’s IT systems and affected functions such as billing and label making for customer deliveries.
+Certain Company or Company-related data appear to have been stolen or destroyed. As a result of the Company’s contingency plans and data backup systems, the Company implemented planned solutions for the issues posed by the incident. The Company’s operations have continued since the detection of the cybersecurity incident in all material respects.
+Although the Company has ascertained that certain files were exfiltrated, it is still investigating the extent of any sensitive information contained in the accessed systems, including whether any personal information was exfiltrated. It is evaluating what legal and regulatory notifications and filings may be required as a result of this incident and will make such filings as are required based on its findings. The Company continues to investigate the nature and scope of the unauthorized access.
+The Company currently expects that a significant portion of its direct costs incurred relating to containing, investigating and remediating the cybersecurity incident will be reimbursed through insurance recoveries.

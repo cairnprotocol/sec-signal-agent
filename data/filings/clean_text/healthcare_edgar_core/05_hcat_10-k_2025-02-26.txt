@@ -1,0 +1,18 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: Health Catalyst, Inc.
+Ticker: HCAT
+CIK: 0001636422
+Form type: 10-K
+Filing date: 2025-02-26
+Accession/source reference: 0001636422-25-000028
+Filing section: Government Regulation / Data Privacy and Security Laws
+Source URL: https://www.sec.gov/Archives/edgar/data/1636422/000163642225000028/hcat-20241231.htm
+Source type: public_edgar_preparsed_excerpt
+Industry group: Healthcare
+Corpus segment: healthcare_edgar_core
+
+Excerpt:
+Our business is subject to extensive, complex, and rapidly changing federal and state laws and regulations, as well as international laws with respect to our international clients. Various federal and state agencies have discretion to issue regulations and interpret and enforce healthcare laws. While we believe we comply in all material respects with applicable healthcare laws and regulations, these regulations can vary significantly from jurisdiction to jurisdiction, and interpretation of existing laws and regulations may change periodically. Federal and state legislatures also may enact various legislative proposals that could materially impact certain aspects of our business.

@@ -1,0 +1,18 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: Alignment Healthcare, Inc.
+Ticker: ALHC
+CIK: 0001832466
+Form type: 10-K
+Filing date: 2025-02-27
+Accession/source reference: 0001628280-25-008730
+Filing section: Risk Factors / Medicare Advantage
+Source URL: https://www.sec.gov/Archives/edgar/data/1832466/000162828025008730/alhc-20241231.htm
+Source type: public_edgar_preparsed_excerpt
+Industry group: Healthcare
+Corpus segment: healthcare_edgar_core
+
+Excerpt:
+A significant portion of our revenue relates, directly or indirectly, to the Medicare Advantage program, which accounted for substantially all of our total revenue for the year ended December 31, 2024. Participating in the Medicare Advantage program exposes us to various risks, as described further below. As of January 1, 2025, under our contracts with CMS, we provided health insurance coverage to approximately 209,900 individual Medicare Advantage members. Our continued participation in the Medicare Advantage program through these and other contracts is not guaranteed. Our CMS contracts are subject to annual renewal, and CMS must also annually approve our bids for the plans we intend to offer under each contract.

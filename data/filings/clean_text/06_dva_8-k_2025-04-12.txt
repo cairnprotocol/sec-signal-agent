@@ -1,0 +1,21 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: DaVita Inc.
+Ticker: DVA
+CIK: 0000927066
+Form type: 8-K
+Filing date: 2025-04-14
+Accession/source reference: 0001193125-25-079593
+Filing section: Item 8.01 Other Events
+Source URL: https://www.sec.gov/Archives/edgar/data/927066/000119312525079593/d948299d8k.htm
+Source type: public_edgar_preparsed_excerpt
+Verification status: verified_public_edgar_excerpt
+Industry group: Healthcare
+Corpus segment: healthcare_edgar_core
+
+Excerpt:
+On April 12, 2025, DaVita Inc. (the “Company” or “we”) became aware of a ransomware incident that has encrypted certain elements of our network. Upon discovery, we activated our response protocols and implemented containment measures, including proactively isolating impacted systems. We are actively working to assess and remediate the incident with the assistance of third-party cybersecurity professionals and have notified law enforcement of the matter.
+We have implemented our contingency plans, and we continue to provide patient care. However, the incident is impacting some of our operations, and while we have implemented interim measures to allow for the restoration of certain functions, we cannot estimate the duration or extent of the disruption at this time.
+Given the recency of the incident, our investigation and response are ongoing, and the full scope, nature, and potential ultimate impact on the Company are not yet known.

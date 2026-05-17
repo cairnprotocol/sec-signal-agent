@@ -1,0 +1,22 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: The Clorox Company
+Ticker: CLX
+CIK: 0000021076
+Form type: 8-K
+Filing date: 2023-09-18
+Accession/source reference: 0001206774-23-001133
+Filing section: Item 8.01 Other Events
+Source URL: https://www.sec.gov/Archives/edgar/data/21076/000120677423001133/clx4242401-8k.htm
+Source type: public_edgar_preparsed_excerpt
+Verification status: verified_public_edgar_excerpt
+Industry group: Other
+Corpus segment: cross_industry_edgar_examples
+
+Excerpt:
+On Aug. 14, 2023, The Clorox Company (the “Company” or “Clorox”) announced that it had identified unauthorized activity on some of its Information Technology (IT) systems and took immediate steps to stop and remediate the activity, including taking certain systems offline. The Company implemented its business continuity plans and began manual ordering and processing procedures shortly thereafter at a reduced rate of operations.
+The Company is operating at a lower rate of order processing and has recently begun to experience an elevated level of consumer product availability issues.
+Based on the information available to date, the Company believes the unauthorized activity is contained due to the steps the Company has taken to address the incident.
+The cybersecurity attack damaged portions of the Company’s IT infrastructure, which caused widescale disruption of Clorox’s operations. The Company is repairing the infrastructure and is reintegrating the systems that were proactively taken offline. The Company expects to begin the process of transitioning back to normal automated order processing the week of Sept. 25.

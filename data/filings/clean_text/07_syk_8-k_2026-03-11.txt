@@ -1,0 +1,22 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: Stryker Corporation
+Ticker: SYK
+CIK: 0000310764
+Form type: 8-K
+Filing date: 2026-03-11
+Accession/source reference: 0001193125-26-102460
+Filing section: Item 8.01 Other Events
+Source URL: https://www.sec.gov/Archives/edgar/data/310764/000119312526102460/d76279d8k.htm
+Source type: public_edgar_preparsed_excerpt
+Verification status: verified_public_edgar_excerpt
+Industry group: Healthcare
+Corpus segment: healthcare_edgar_core
+
+Excerpt:
+On March 11, 2026, Stryker Corporation (“we” or the “Company”) identified a cybersecurity incident affecting certain information technology systems of the Company that has resulted in a global disruption to the Company’s Microsoft environment. Upon detection, the Company activated its cybersecurity response plan and launched an investigation internally with the support of external advisors and cybersecurity experts to assess and to contain the threat.
+The Company has no indication of ransomware or malware and believes the incident is contained.
+The incident has caused, and is expected to continue to cause, disruptions and limitations of access to certain of the Company’s information systems and business applications supporting aspects of the Company’s operations and corporate functions. While the Company is working diligently to restore affected functions and systems access, the timeline for a full restoration is not yet known. The Company has business continuity measures in place to continue to support its customers and partners.
+The Company’s investigation of the cybersecurity incident is ongoing, and the full scope, nature and impacts, including operational and financial impacts, of the incident are not yet known. Accordingly, the Company has not yet determined whether the incident is reasonably likely to have a material impact on the Company.

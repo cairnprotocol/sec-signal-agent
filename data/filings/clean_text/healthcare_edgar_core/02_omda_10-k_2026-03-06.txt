@@ -1,0 +1,18 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: Omada Health, Inc.
+Ticker: OMDA
+CIK: 0001611115
+Form type: 10-K
+Filing date: 2026-03-06
+Accession/source reference: 0001628280-26-015637
+Filing section: Business / Scaled, Diversified Go-to-Market Model
+Source URL: https://www.sec.gov/Archives/edgar/data/1611115/000162828026015637/omda-20251231.htm
+Source type: public_edgar_preparsed_excerpt
+Industry group: Healthcare
+Corpus segment: healthcare_edgar_core
+
+Excerpt:
+Our growth strategy is centered on expanding the number of individuals covered for participation in one or more of our programs by our paying customers, which we call “covered lives,” as well as improving enrollment effectiveness and driving sustained member engagement. We seek to increase the number of individuals with access to our programs by offering multiple products across diverse end markets, deepening relationships with employers, health plans, and pharmacy benefit managers, and expanding distribution through a scalable, diversified go-to-market model. We also focus on converting eligible lives into active members through targeted enrollment outreach, multi-program adoption, and continued investment in technology, including tools designed to optimize enrollment and funnel conversion.

@@ -1,0 +1,18 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: Doximity, Inc.
+Ticker: DOCS
+CIK: 0001516513
+Form type: 10-K
+Filing date: 2025-05-20
+Accession/source reference: 0001516513-25-000056
+Filing section: Business / Overview
+Source URL: https://www.sec.gov/Archives/edgar/data/1516513/000151651325000056/docs-20250331.htm
+Source type: public_edgar_preparsed_excerpt
+Industry group: Healthcare
+Corpus segment: healthcare_edgar_core
+
+Excerpt:
+We are the leading digital platform for U.S. medical professionals, as measured by the number of members. Our members include more than 80% of U.S. physicians, spanning all 50 states and every medical specialty. Our mission is to help every physician be more productive and provide better care for their patients. We provide our members with digital tools specifically built for medicine, enabling our members to collaborate with colleagues, stay up to date with the latest medical news and research, manage their careers and on-call schedules, streamline documentation and administrative paperwork, and conduct virtual patient visits.

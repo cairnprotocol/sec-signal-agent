@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.env.*
+*.env
+secrets.*
+credentials.*
+api_keys.*
+
+# Logs / local outputs
+*.log
+logs/
+
+# Archives / packaged local copies
+Archive.zip
+*.zip

@@ -1,0 +1,18 @@
+SOURCE NOTE:
+This file contains a short, hand-curated, pre-parsed excerpt from a public EDGAR filing. It is included to demonstrate source-grounded signal extraction. The prototype does not implement full SEC HTML/XBRL parsing.
+
+Metadata:
+Company: Teladoc Health, Inc.
+Ticker: TDOC
+CIK: 0001477449
+Form type: 10-K
+Filing date: 2025-02-27
+Accession/source reference: 0001477449-25-000005
+Filing section: Health Information Privacy and Security Laws
+Source URL: https://www.sec.gov/Archives/edgar/data/1477449/000147744925000005/tdoc-20241231.htm
+Source type: public_edgar_preparsed_excerpt
+Industry group: Healthcare
+Corpus segment: healthcare_edgar_core
+
+Excerpt:
+There are numerous U.S. federal and state laws and regulations related to the privacy and security of personally identifiable information (“PII”), including health information. In particular, HIPAA establishes privacy and security standards that limit the use and disclosure of protected health information (“PHI”) and require the implementation of administrative, physical, and technical safeguards to ensure the confidentiality, integrity and availability of individually identifiable health information in electronic form. In addition, numerous states, including California, Colorado, Washington, Nevada, and Connecticut amongst others, have passed consumer privacy laws intended to supplement the protections provided by HIPAA, Teladoc Health, the THMG Association and its providers, our health plan Clients and our employee welfare benefit plan Clients are all regulated as covered entities under HIPAA, and are required to comply both with HIPAA and applicable state privacy laws.
