@@ -167,6 +167,14 @@ python demo_runner.py --all
 - The app is not production-deployed and does not include full monitoring, auth, observability, reviewer disposition capture, or evaluation infrastructure.
 - Some internal module names remain from the original prototype for compatibility, but public-facing output is framed around review lanes, evidence packets, and human-owned workflows.
 
+## License and Usage
+
+This repository is a public portfolio/demo project. It is shared for review and discussion, not as production software.
+
+No formal open-source license is granted at this time. The code, prompts, synthetic workflow context, and dashboard design remain owned by the author unless otherwise stated.
+
+The EDGAR filing excerpts are sourced from public SEC filings. The prototype does not provide legal, financial, clinical, diagnostic, or treatment advice and should not be used for production decision-making without further validation, security review, and governance.
+
 ## What I Would Build Next
 
 - Add a robust SEC parser with section extraction and XBRL handling.
