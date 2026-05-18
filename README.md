@@ -97,7 +97,7 @@ Filing excerpt -> Trigger Extractor -> Agent Loop -> Evidence Packet
                             Ranked Review Queue
 ```
 
-The key pattern is LLM reasoning inside a bounded agent loop, with Python enforcing evidence grounding, routing, scoring, and auditability.
+The key pattern is LLM-assisted language analysis inside a bounded agent loop, with Python enforcing evidence grounding, routing, scoring, and auditability.
 
 - **Python is the controller.** It loads filing excerpts, calls tools, validates outputs, computes scores, and emits structured packets.
 - **The LLM handles language reasoning.** It extracts trigger candidates and synthesizes review-ready rationale from filing text.
@@ -105,7 +105,7 @@ The key pattern is LLM reasoning inside a bounded agent loop, with Python enforc
 - **Scoring is deterministic.** The LLM does not compute final priority scores or bucket assignments.
 - **Review-lane routing is deterministic.** Items collapse into Trust & Diligence or Commercial Signal using explicit rules and synthetic relationship/review context.
 - **Evidence is validated.** Output quotes are checked against the local excerpt text.
-- **Reasoning is auditable.** Each card shows the tool path used to produce the packet.
+- **Execution is auditable.** Each card shows the tool path used to produce the packet.
 
 ## Demo / Sample Output
 
@@ -163,6 +163,23 @@ Refresh the pre-run output:
 
 ```bash
 python demo_runner.py --all
+```
+
+## Deterministic Checks
+
+The LLM is used for language extraction and synthesis. Final workflow controls remain deterministic in Python: priority scoring, review-lane routing, packet schema validation, and evidence quote checks.
+
+A minimal pytest suite covers the core non-LLM controls:
+- scoring bucket assignment;
+- review-lane routing;
+- pre-run demo packet shape;
+- source provenance fields;
+- exact evidence quote matching against local filing excerpts.
+
+Run:
+
+```bash
+python -m pytest
 ```
 
 ## Design Decisions
