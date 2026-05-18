@@ -4,6 +4,22 @@ An agentic workflow prototype that reads verified public EDGAR excerpts and turn
 
 The public version is framed as a healthcare commercial, partnerships, strategy, operations, trust/security, and compliance review queue. It demonstrates a transferable regulated-workflow pattern: signal extraction, deterministic scoring and routing, evidence validation, human-review gates, and audit traces.
 
+## Demo Preview
+
+The app ships with a pre-run review queue for fast evaluation without API keys, and a live run mode that shows the agent loop, tool calls, and audit trail.
+
+### Ranked Review Queue
+
+<img src="docs/screenshots/dashboard-overview.png" alt="SEC Signal Agent dashboard overview showing ranked healthcare EDGAR review queue" width="900">
+
+### Live Agent Loop
+
+<img src="docs/screenshots/live-agent-loop.png" alt="Live run showing agent loop, tool calls, extraction, corroboration, and watchlist emission" width="900">
+
+### Evidence Packet and Audit Trace
+
+<img src="docs/screenshots/omada-audit-trace.png" alt="Evidence packet showing Omada Health review lane, source-grounded rationale, and audit trace" width="900">
+
 ## Why It Matters
 
 Regulated operations teams often need to notice material changes buried in long, language-heavy source documents. This prototype shows a practical AI-builder pattern for that work: use an LLM to extract and synthesize evidence, then use deterministic code to control scoring, routing, fallbacks, and review gates.
