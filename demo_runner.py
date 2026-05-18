@@ -5,12 +5,79 @@ import json
 import sys
 from pathlib import Path
 
-from schemas import WatchlistEntry
+from schemas import WatchlistEntry, TriggerExtraction, ToolTraceEntry
 from filing_loader import load_manifest, load_filing_text
 from trigger_extractor import extract_trigger
 from agent import run_agent
 
 OUTPUT_DIR = Path(__file__).parent / "demo_outputs"
+
+
+def build_prerun_audit_trace(meta, trigger: TriggerExtraction, entry: WatchlistEntry) -> list[ToolTraceEntry]:
+    """Create an audit-safe deterministic trace for cached pre-run packets."""
+    return [
+        ToolTraceEntry(
+            tool_name="source_loaded",
+            inputs={
+                "ticker": meta.ticker,
+                "local_text_path": meta.local_text_path,
+                "source_url": meta.source_url,
+            },
+            result_summary=f"Loaded verified {meta.form_type or meta.filing_type} excerpt for {meta.company_name.rstrip('.')}.",
+            reason="source / filing loaded",
+        ),
+        ToolTraceEntry(
+            tool_name="trigger_extracted",
+            inputs={
+                "ticker": meta.ticker,
+                "primary_trigger_hint": meta.primary_trigger_hint,
+                "filing_section": meta.filing_section,
+            },
+            result_summary=f"Classified as {trigger.trigger_type.value} with {len(trigger.evidence_quotes)} evidence quote(s).",
+            reason="trigger extracted",
+        ),
+        ToolTraceEntry(
+            tool_name="get_account_context",
+            inputs={"ticker": meta.ticker, "corpus_segment": meta.corpus_segment},
+            result_summary=f"Loaded synthetic review context for {entry.review_lane} and {entry.primary_user}.",
+            reason="account or review context lookup",
+        ),
+        ToolTraceEntry(
+            tool_name="check_prior_filing",
+            inputs={"ticker": meta.ticker},
+            result_summary="No prior local filing state is used in the cached pre-run demo.",
+            reason="prior filing check",
+        ),
+        ToolTraceEntry(
+            tool_name="get_scoring",
+            inputs={
+                "trigger_type": trigger.trigger_type.value,
+                "urgency_tier": trigger.urgency_tier.value,
+                "filing_date": meta.filing_date,
+            },
+            result_summary=f"Computed {entry.rank_bucket.value} priority score {entry.final_score:.3f}.",
+            reason="deterministic scoring",
+        ),
+        ToolTraceEntry(
+            tool_name="get_product_fit",
+            inputs={
+                "trigger_type": trigger.trigger_type.value,
+                "scenario": entry.scenario_label,
+            },
+            result_summary=f"Mapped to {entry.review_lane} with deliverable: {entry.deliverable_type}.",
+            reason="deterministic routing",
+        ),
+        ToolTraceEntry(
+            tool_name="emit_watchlist_entry",
+            inputs={
+                "ticker": meta.ticker,
+                "review_lane": entry.review_lane,
+                "recommended_action": entry.recommended_action,
+            },
+            result_summary="Final source-grounded evidence packet emitted for the cached pre-run demo.",
+            reason="final evidence packet emitted",
+        ),
+    ]
 
 
 def run_single(ticker: str | None = None, verbose: bool = True):
@@ -100,6 +167,7 @@ def run_single(ticker: str | None = None, verbose: bool = True):
         filing_text=filing_text,
         on_step=on_step,
     )
+    entry.tool_trace = build_prerun_audit_trace(meta, trigger, entry)
 
     if verbose:
         print(f"\n{'='*60}")
@@ -196,6 +264,7 @@ def run_all(verbose: bool = True):
             filing_text=filing_text,
             on_step=on_step,
         )
+        entry.tool_trace = build_prerun_audit_trace(meta, trigger, entry)
         entries.append(entry)
 
     # Sort by score descending

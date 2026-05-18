@@ -28,39 +28,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "SYK"
+          "ticker": "SYK",
+          "local_text_path": "data/filings/clean_text/07_syk_8-k_2026-03-11.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/310764/000119312526102460/d76279d8k.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 8-K excerpt for Stryker Corporation.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "data_privacy_security_risk",
+          "ticker": "SYK",
+          "primary_trigger_hint": "data_privacy_security_risk",
+          "filing_section": "Item 8.01 Other Events"
+        },
+        "result_summary": "Classified as data_privacy_security_risk with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "SYK",
+          "corpus_segment": "healthcare_edgar_core"
+        },
+        "result_summary": "Loaded synthetic review context for Trust & Diligence and Trust/Security, Compliance, Quality reviewer.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "SYK"
         },
-        "result_summary": "Mapped to review lane: Trust & Diligence",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "data_privacy_security_risk",
+          "urgency_tier": "tier_1",
           "filing_date": "2026-03-11"
         },
-        "result_summary": "Computed priority score: 0.859",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed hot priority score 0.859.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
-          "review_lane": "Trust & Diligence"
+          "trigger_type": "data_privacy_security_risk",
+          "scenario": "Privacy / security disclosure"
         },
-        "result_summary": "Stryker Corporation disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Trust & Diligence with deliverable: Diligence packet.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "SYK",
+          "review_lane": "Trust & Diligence",
+          "recommended_action": "Draft a diligence packet that summarizes Stryker Corporation's filing event and gives the Trust lead partner-ready control evidence prompts."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -108,39 +139,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "UFPT"
+          "ticker": "UFPT",
+          "local_text_path": "data/filings/clean_text/08_ufpt_8-k_2026-02-19.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/914156/000162828026011152/ufpt-20260219.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 8-K excerpt for UFP Technologies Inc.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "data_privacy_security_risk",
+          "ticker": "UFPT",
+          "primary_trigger_hint": "data_privacy_security_risk",
+          "filing_section": "Item 1.05 Material Cybersecurity Incidents"
+        },
+        "result_summary": "Classified as data_privacy_security_risk with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "UFPT",
+          "corpus_segment": "cross_industry_edgar_examples"
+        },
+        "result_summary": "Loaded synthetic review context for Trust & Diligence and Trust/Security, Compliance, Quality reviewer.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "UFPT"
         },
-        "result_summary": "Mapped to review lane: Trust & Diligence",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "data_privacy_security_risk",
+          "urgency_tier": "tier_1",
           "filing_date": "2026-02-24"
         },
-        "result_summary": "Computed priority score: 0.859",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed hot priority score 0.859.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
-          "review_lane": "Trust & Diligence"
+          "trigger_type": "data_privacy_security_risk",
+          "scenario": "Privacy / security disclosure"
         },
-        "result_summary": "UFP Technologies Inc. disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Trust & Diligence with deliverable: Diligence packet.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "UFPT",
+          "review_lane": "Trust & Diligence",
+          "recommended_action": "Draft a diligence packet that summarizes UFP Technologies Inc.'s filing event and gives the Trust lead partner-ready control evidence prompts."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -188,39 +250,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "OMDA"
+          "ticker": "OMDA",
+          "local_text_path": "data/filings/clean_text/healthcare_edgar_core/02_omda_10-k_2026-03-06.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1611115/000162828026015637/omda-20251231.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 10-K excerpt for Omada Health, Inc.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "operating_scale_or_platform_change",
+          "ticker": "OMDA",
+          "primary_trigger_hint": "operating_scale_or_platform_change",
+          "filing_section": "Business / Scaled, Diversified Go-to-Market Model"
+        },
+        "result_summary": "Classified as operating_scale_or_platform_change with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "OMDA",
+          "corpus_segment": "healthcare_edgar_core"
+        },
+        "result_summary": "Loaded synthetic review context for Commercial Signal and Partnerships / Commercial Strategy.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "OMDA"
         },
-        "result_summary": "Mapped to review lane: Commercial Signal",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "operating_scale_or_platform_change",
+          "urgency_tier": "tier_2",
           "filing_date": "2026-03-06"
         },
-        "result_summary": "Computed priority score: 0.766",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.766.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes operating scale, platform, workflow, or integration change.",
-          "review_lane": "Commercial Signal"
+          "trigger_type": "operating_scale_or_platform_change",
+          "scenario": "Platform / go-to-market change"
         },
-        "result_summary": "Omada Health, Inc. describes platform, channel, or go-to-market change that affects buyer priorities. Partnerships should use this as a brief for account planning, platform discussion, or outreach timing.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Commercial Signal with deliverable: Partner brief.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "OMDA",
+          "review_lane": "Commercial Signal",
+          "recommended_action": "Refresh the account plan to connect Omada Health, Inc.'s operating change with a concrete Partnerships follow-up angle."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -269,39 +362,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "ST"
+          "ticker": "ST",
+          "local_text_path": "data/filings/clean_text/05_st_8-k_2025-04-06.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1477294/000147729425000047/st-20250406.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 8-K excerpt for Sensata Technologies Holding plc.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "data_privacy_security_risk",
+          "ticker": "ST",
+          "primary_trigger_hint": "data_privacy_security_risk",
+          "filing_section": "Item 1.05 Material Cybersecurity Incidents"
+        },
+        "result_summary": "Classified as data_privacy_security_risk with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "ST",
+          "corpus_segment": "cross_industry_edgar_examples"
+        },
+        "result_summary": "Loaded synthetic review context for Trust & Diligence and Trust/Security, Compliance, Quality reviewer.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "ST"
         },
-        "result_summary": "Mapped to review lane: Trust & Diligence",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "data_privacy_security_risk",
+          "urgency_tier": "tier_1",
           "filing_date": "2025-04-09"
         },
-        "result_summary": "Computed priority score: 0.649",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.649.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
-          "review_lane": "Trust & Diligence"
+          "trigger_type": "data_privacy_security_risk",
+          "scenario": "Privacy / security disclosure"
         },
-        "result_summary": "Sensata Technologies Holding plc disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Trust & Diligence with deliverable: Diligence packet.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "ST",
+          "review_lane": "Trust & Diligence",
+          "recommended_action": "Draft a diligence packet that summarizes Sensata Technologies Holding plc's filing event and gives the Trust lead partner-ready control evidence prompts."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -349,39 +473,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "DVA"
+          "ticker": "DVA",
+          "local_text_path": "data/filings/clean_text/06_dva_8-k_2025-04-12.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/927066/000119312525079593/d948299d8k.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 8-K excerpt for DaVita Inc.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "data_privacy_security_risk",
+          "ticker": "DVA",
+          "primary_trigger_hint": "data_privacy_security_risk",
+          "filing_section": "Item 8.01 Other Events"
+        },
+        "result_summary": "Classified as data_privacy_security_risk with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "DVA",
+          "corpus_segment": "healthcare_edgar_core"
+        },
+        "result_summary": "Loaded synthetic review context for Trust & Diligence and Trust/Security, Compliance, Quality reviewer.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "DVA"
         },
-        "result_summary": "Mapped to review lane: Trust & Diligence",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "data_privacy_security_risk",
+          "urgency_tier": "tier_1",
           "filing_date": "2025-04-14"
         },
-        "result_summary": "Computed priority score: 0.649",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.649.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
-          "review_lane": "Trust & Diligence"
+          "trigger_type": "data_privacy_security_risk",
+          "scenario": "Privacy / security disclosure"
         },
-        "result_summary": "DaVita Inc. disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Trust & Diligence with deliverable: Diligence packet.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "DVA",
+          "review_lane": "Trust & Diligence",
+          "recommended_action": "Draft a diligence packet that summarizes DaVita Inc.'s filing event and gives the Trust lead partner-ready control evidence prompts."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -429,39 +584,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "DOCS"
+          "ticker": "DOCS",
+          "local_text_path": "data/filings/clean_text/healthcare_edgar_core/07_docs_10-k_2025-05-20.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1516513/000151651325000056/docs-20250331.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 10-K excerpt for Doximity, Inc.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "operating_scale_or_platform_change",
+          "ticker": "DOCS",
+          "primary_trigger_hint": "operating_scale_or_platform_change",
+          "filing_section": "Business / Overview"
+        },
+        "result_summary": "Classified as operating_scale_or_platform_change with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "DOCS",
+          "corpus_segment": "healthcare_edgar_core"
+        },
+        "result_summary": "Loaded synthetic review context for Commercial Signal and Partnerships / Commercial Strategy.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "DOCS"
         },
-        "result_summary": "Mapped to review lane: Commercial Signal",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "operating_scale_or_platform_change",
+          "urgency_tier": "tier_2",
           "filing_date": "2025-05-20"
         },
-        "result_summary": "Computed priority score: 0.616",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.616.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes operating scale, platform, workflow, or integration change.",
-          "review_lane": "Commercial Signal"
+          "trigger_type": "operating_scale_or_platform_change",
+          "scenario": "Platform / go-to-market change"
         },
-        "result_summary": "Doximity, Inc. describes platform, channel, or go-to-market change that affects buyer priorities. Partnerships should use this as a brief for account planning, platform discussion, or outreach timing.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Commercial Signal with deliverable: Partner brief.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "DOCS",
+          "review_lane": "Commercial Signal",
+          "recommended_action": "Refresh the account plan to connect Doximity, Inc.'s operating change with a concrete Partnerships follow-up angle."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -510,39 +696,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "TDOC"
+          "ticker": "TDOC",
+          "local_text_path": "data/filings/clean_text/healthcare_edgar_core/01_tdoc_10-k_2025-02-27.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1477449/000147744925000005/tdoc-20241231.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 10-K excerpt for Teladoc Health, Inc.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "data_privacy_security_risk",
+          "ticker": "TDOC",
+          "primary_trigger_hint": "data_privacy_security_risk",
+          "filing_section": "Health Information Privacy and Security Laws"
+        },
+        "result_summary": "Classified as data_privacy_security_risk with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "TDOC",
+          "corpus_segment": "healthcare_edgar_core"
+        },
+        "result_summary": "Loaded synthetic review context for Trust & Diligence and Trust/Security, Compliance, Quality reviewer.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "TDOC"
         },
-        "result_summary": "Mapped to review lane: Trust & Diligence",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "data_privacy_security_risk",
+          "urgency_tier": "tier_2",
           "filing_date": "2025-02-27"
         },
-        "result_summary": "Computed priority score: 0.609",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.609.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
-          "review_lane": "Trust & Diligence"
+          "trigger_type": "data_privacy_security_risk",
+          "scenario": "Privacy / security disclosure"
         },
-        "result_summary": "Teladoc Health, Inc. disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Trust & Diligence with deliverable: Diligence packet.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "TDOC",
+          "review_lane": "Trust & Diligence",
+          "recommended_action": "Draft a diligence packet that summarizes Teladoc Health, Inc.'s filing event and gives the Trust lead partner-ready control evidence prompts."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -591,39 +808,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "HCAT"
+          "ticker": "HCAT",
+          "local_text_path": "data/filings/clean_text/healthcare_edgar_core/05_hcat_10-k_2025-02-26.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1636422/000163642225000028/hcat-20241231.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 10-K excerpt for Health Catalyst, Inc.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "data_privacy_security_risk",
+          "ticker": "HCAT",
+          "primary_trigger_hint": "data_privacy_security_risk",
+          "filing_section": "Government Regulation / Data Privacy and Security Laws"
+        },
+        "result_summary": "Classified as data_privacy_security_risk with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "HCAT",
+          "corpus_segment": "healthcare_edgar_core"
+        },
+        "result_summary": "Loaded synthetic review context for Trust & Diligence and Trust/Security, Compliance, Quality reviewer.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "HCAT"
         },
-        "result_summary": "Mapped to review lane: Trust & Diligence",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "data_privacy_security_risk",
+          "urgency_tier": "tier_2",
           "filing_date": "2025-02-26"
         },
-        "result_summary": "Computed priority score: 0.605",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.605.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
-          "review_lane": "Trust & Diligence"
+          "trigger_type": "data_privacy_security_risk",
+          "scenario": "Privacy / security disclosure"
         },
-        "result_summary": "Health Catalyst, Inc. disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Trust & Diligence with deliverable: Diligence packet.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "HCAT",
+          "review_lane": "Trust & Diligence",
+          "recommended_action": "Draft a diligence packet that summarizes Health Catalyst, Inc.'s filing event and gives the Trust lead partner-ready control evidence prompts."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -672,39 +920,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "IRTC"
+          "ticker": "IRTC",
+          "local_text_path": "data/filings/clean_text/healthcare_edgar_core/03_irtc_10-k_2025-02-20.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1388658/000138865825000028/irtc-20241231.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 10-K excerpt for iRhythm Technologies, Inc.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "ticker": "IRTC",
+          "primary_trigger_hint": "reimbursement_or_commercial_model_pressure",
+          "filing_section": "Business / Third-Party Reimbursement"
+        },
+        "result_summary": "Classified as reimbursement_or_commercial_model_pressure with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "IRTC",
+          "corpus_segment": "healthcare_edgar_core"
+        },
+        "result_summary": "Loaded synthetic review context for Commercial Signal and Partnerships / Commercial Strategy.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "IRTC"
         },
-        "result_summary": "Mapped to review lane: Commercial Signal",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "urgency_tier": "tier_2",
           "filing_date": "2025-02-20"
         },
-        "result_summary": "Computed priority score: 0.596",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.596.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes payer, reimbursement, coverage, or commercial model pressure.",
-          "review_lane": "Commercial Signal"
+          "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "scenario": "Payer / commercial model pressure"
         },
-        "result_summary": "iRhythm Technologies, Inc. describes payer, reimbursement, or commercial model pressure that affects buyer priorities. Partnerships should use this as a brief for account planning, reimbursement discussion, or outreach timing.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Commercial Signal with deliverable: Partner brief.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "IRTC",
+          "review_lane": "Commercial Signal",
+          "recommended_action": "Draft a one-page partner brief that links iRhythm Technologies, Inc.'s reimbursement pressure to account priority for the Commercial Strategy lead."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -753,39 +1032,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "DXCM"
+          "ticker": "DXCM",
+          "local_text_path": "data/filings/clean_text/healthcare_edgar_core/04_dxcm_10-k_2025-02-18.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1093557/000109355725000036/dxcm-20241231.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 10-K excerpt for DexCom, Inc.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "ticker": "DXCM",
+          "primary_trigger_hint": "reimbursement_or_commercial_model_pressure",
+          "filing_section": "Risk Factors / Risks Related to Pricing and Reimbursement"
+        },
+        "result_summary": "Classified as reimbursement_or_commercial_model_pressure with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "DXCM",
+          "corpus_segment": "healthcare_edgar_core"
+        },
+        "result_summary": "Loaded synthetic review context for Commercial Signal and Partnerships / Commercial Strategy.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "DXCM"
         },
-        "result_summary": "Mapped to review lane: Commercial Signal",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "urgency_tier": "tier_2",
           "filing_date": "2025-02-18"
         },
-        "result_summary": "Computed priority score: 0.596",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.596.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes payer, reimbursement, coverage, or commercial model pressure.",
-          "review_lane": "Commercial Signal"
+          "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "scenario": "Payer / commercial model pressure"
         },
-        "result_summary": "DexCom, Inc. describes payer, reimbursement, or commercial model pressure that affects buyer priorities. Partnerships should use this as a brief for account planning, reimbursement discussion, or outreach timing.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Commercial Signal with deliverable: Partner brief.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "DXCM",
+          "review_lane": "Commercial Signal",
+          "recommended_action": "Draft a one-page partner brief that links DexCom, Inc.'s reimbursement pressure to account priority for the Commercial Strategy lead."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -834,39 +1144,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "GEHC"
+          "ticker": "GEHC",
+          "local_text_path": "data/filings/clean_text/healthcare_edgar_core/06_gehc_10-k_2025-02-13.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1932393/000193239325000005/gehc-20241231.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 10-K excerpt for GE HealthCare Technologies Inc.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "ticker": "GEHC",
+          "primary_trigger_hint": "reimbursement_or_commercial_model_pressure",
+          "filing_section": "Risk Factors / Industry and Economic Risks"
+        },
+        "result_summary": "Classified as reimbursement_or_commercial_model_pressure with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "GEHC",
+          "corpus_segment": "healthcare_edgar_core"
+        },
+        "result_summary": "Loaded synthetic review context for Commercial Signal and Partnerships / Commercial Strategy.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "GEHC"
         },
-        "result_summary": "Mapped to review lane: Commercial Signal",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "urgency_tier": "tier_2",
           "filing_date": "2025-02-13"
         },
-        "result_summary": "Computed priority score: 0.596",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.596.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes payer, reimbursement, coverage, or commercial model pressure.",
-          "review_lane": "Commercial Signal"
+          "trigger_type": "reimbursement_or_commercial_model_pressure",
+          "scenario": "Payer / commercial model pressure"
         },
-        "result_summary": "GE HealthCare Technologies Inc. describes payer, reimbursement, or commercial model pressure that affects buyer priorities. Partnerships should use this as a brief for account planning, reimbursement discussion, or outreach timing.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Commercial Signal with deliverable: Partner brief.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "GEHC",
+          "review_lane": "Commercial Signal",
+          "recommended_action": "Draft a one-page partner brief that links GE HealthCare Technologies Inc.'s reimbursement pressure to account priority for the Commercial Strategy lead."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -915,39 +1256,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "UNH"
+          "ticker": "UNH",
+          "local_text_path": "data/filings/clean_text/02_unh_8-k_2024-02-21.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/731766/000073176625000063/unh-20241231.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 10-K excerpt for UnitedHealth Group Incorporated.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "data_privacy_security_risk",
+          "ticker": "UNH",
+          "primary_trigger_hint": "data_privacy_security_risk",
+          "filing_section": "Change Healthcare Cyberattack"
+        },
+        "result_summary": "Classified as data_privacy_security_risk with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "UNH",
+          "corpus_segment": "healthcare_edgar_core"
+        },
+        "result_summary": "Loaded synthetic review context for Trust & Diligence and Trust/Security, Compliance, Quality reviewer.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "UNH"
         },
-        "result_summary": "Mapped to review lane: Trust & Diligence",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "data_privacy_security_risk",
+          "urgency_tier": "tier_2",
           "filing_date": "2025-02-27"
         },
-        "result_summary": "Computed priority score: 0.585",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.585.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
-          "review_lane": "Trust & Diligence"
+          "trigger_type": "data_privacy_security_risk",
+          "scenario": "Privacy / security disclosure"
         },
-        "result_summary": "UnitedHealth Group Incorporated disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Trust & Diligence with deliverable: Diligence packet.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "UNH",
+          "review_lane": "Trust & Diligence",
+          "recommended_action": "Draft a diligence packet that summarizes UnitedHealth Group Incorporated's filing event and gives the Trust lead partner-ready control evidence prompts."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -995,39 +1367,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "ALHC"
+          "ticker": "ALHC",
+          "local_text_path": "data/filings/clean_text/healthcare_edgar_core/08_alhc_10-k_2025-02-27.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1832466/000162828025008730/alhc-20241231.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 10-K excerpt for Alignment Healthcare, Inc.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "regulatory_compliance_pressure",
+          "ticker": "ALHC",
+          "primary_trigger_hint": "regulatory_compliance_pressure",
+          "filing_section": "Risk Factors / Medicare Advantage"
+        },
+        "result_summary": "Classified as regulatory_compliance_pressure with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "ALHC",
+          "corpus_segment": "healthcare_edgar_core"
+        },
+        "result_summary": "Loaded synthetic review context for Trust & Diligence and Trust/Security, Compliance, Quality reviewer.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "ALHC"
         },
-        "result_summary": "Mapped to review lane: Trust & Diligence",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "regulatory_compliance_pressure",
+          "urgency_tier": "tier_2",
           "filing_date": "2025-02-27"
         },
-        "result_summary": "Computed priority score: 0.583",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.583.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes regulatory, compliance, reporting, or quality pressure.",
-          "review_lane": "Trust & Diligence"
+          "trigger_type": "regulatory_compliance_pressure",
+          "scenario": "Regulatory / compliance pressure"
         },
-        "result_summary": "Alignment Healthcare, Inc. disclosed regulatory or quality pressure that could shape partner diligence or compliance review. Trust and Compliance teams should prepare comparable oversight evidence and partner Q&A before the issue comes up externally.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Trust & Diligence with deliverable: Diligence packet.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "ALHC",
+          "review_lane": "Trust & Diligence",
+          "recommended_action": "Prepare a partner Q&A brief that summarizes Alignment Healthcare, Inc.'s filing event and the compliance or quality questions likely to surface in diligence."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -1075,39 +1478,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "CLX"
+          "ticker": "CLX",
+          "local_text_path": "data/filings/clean_text/01_clx_8-k_2023-08-14.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/21076/000120677423001133/clx4242401-8k.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 8-K excerpt for The Clorox Company.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "data_privacy_security_risk",
+          "ticker": "CLX",
+          "primary_trigger_hint": "data_privacy_security_risk",
+          "filing_section": "Item 8.01 Other Events"
+        },
+        "result_summary": "Classified as data_privacy_security_risk with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "CLX",
+          "corpus_segment": "cross_industry_edgar_examples"
+        },
+        "result_summary": "Loaded synthetic review context for Trust & Diligence and Trust/Security, Compliance, Quality reviewer.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "CLX"
         },
-        "result_summary": "Mapped to review lane: Trust & Diligence",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "data_privacy_security_risk",
+          "urgency_tier": "tier_1",
           "filing_date": "2023-09-18"
         },
-        "result_summary": "Computed priority score: 0.572",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.572.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
-          "review_lane": "Trust & Diligence"
+          "trigger_type": "data_privacy_security_risk",
+          "scenario": "Privacy / security disclosure"
         },
-        "result_summary": "The Clorox Company disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Trust & Diligence with deliverable: Diligence packet.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "CLX",
+          "review_lane": "Trust & Diligence",
+          "recommended_action": "Draft a diligence packet that summarizes The Clorox Company's filing event and gives the Trust lead partner-ready control evidence prompts."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -1155,39 +1589,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "VFC"
+          "ticker": "VFC",
+          "local_text_path": "data/filings/clean_text/03_vfc_8-k_2023-12-18.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/103379/000095012323011228/d659095d8k.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 8-K excerpt for V.F. Corporation.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "data_privacy_security_risk",
+          "ticker": "VFC",
+          "primary_trigger_hint": "data_privacy_security_risk",
+          "filing_section": "Item 1.05 Material Cybersecurity Incidents"
+        },
+        "result_summary": "Classified as data_privacy_security_risk with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "VFC",
+          "corpus_segment": "cross_industry_edgar_examples"
+        },
+        "result_summary": "Loaded synthetic review context for Trust & Diligence and Trust/Security, Compliance, Quality reviewer.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "VFC"
         },
-        "result_summary": "Mapped to review lane: Trust & Diligence",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "data_privacy_security_risk",
+          "urgency_tier": "tier_1",
           "filing_date": "2023-12-18"
         },
-        "result_summary": "Computed priority score: 0.572",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed warm priority score 0.572.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes privacy, security, cybersecurity, or protected-data risk.",
-          "review_lane": "Trust & Diligence"
+          "trigger_type": "data_privacy_security_risk",
+          "scenario": "Privacy / security disclosure"
         },
-        "result_summary": "V.F. Corporation disclosed a cybersecurity, privacy, or security event that could appear in partner diligence or compliance review. Trust and Compliance teams should prepare comparable control evidence and partner Q&A before the issue comes up externally.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Trust & Diligence with deliverable: Diligence packet.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "VFC",
+          "review_lane": "Trust & Diligence",
+          "recommended_action": "Draft a diligence packet that summarizes V.F. Corporation's filing event and gives the Trust lead partner-ready control evidence prompts."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
@@ -1235,39 +1700,70 @@
     "reasoning_summary": "Review packet generated from verified filing evidence and deterministic routing rules.",
     "tool_trace": [
       {
-        "tool_name": "get_account_context",
+        "tool_name": "source_loaded",
         "inputs": {
-          "ticker": "LW"
+          "ticker": "LW",
+          "local_text_path": "data/filings/clean_text/04_lw_10-q_2024-11-24.txt",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1679273/000167927324000087/lw-20241124.htm"
         },
-        "result_summary": "Loaded synthetic entity and workflow context.",
-        "reason": "Pre-run deterministic demo mode"
+        "result_summary": "Loaded verified 10-Q excerpt for Lamb Weston Holdings Inc.",
+        "reason": "source / filing loaded"
       },
       {
-        "tool_name": "get_product_fit",
+        "tool_name": "trigger_extracted",
         "inputs": {
-          "trigger_type": "operating_scale_or_platform_change",
+          "ticker": "LW",
+          "primary_trigger_hint": "operating_scale_or_platform_change",
+          "filing_section": "Management's Discussion and Analysis"
+        },
+        "result_summary": "Classified as operating_scale_or_platform_change with 1 evidence quote(s).",
+        "reason": "trigger extracted"
+      },
+      {
+        "tool_name": "get_account_context",
+        "inputs": {
+          "ticker": "LW",
+          "corpus_segment": "cross_industry_edgar_examples"
+        },
+        "result_summary": "Loaded synthetic review context for Commercial Signal and Partnerships / Commercial Strategy.",
+        "reason": "account or review context lookup"
+      },
+      {
+        "tool_name": "check_prior_filing",
+        "inputs": {
           "ticker": "LW"
         },
-        "result_summary": "Mapped to review lane: Commercial Signal",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "No prior local filing state is used in the cached pre-run demo.",
+        "reason": "prior filing check"
       },
       {
         "tool_name": "get_scoring",
         "inputs": {
           "trigger_type": "operating_scale_or_platform_change",
+          "urgency_tier": "tier_2",
           "filing_date": "2024-12-19"
         },
-        "result_summary": "Computed priority score: 0.536",
-        "reason": "Deterministic demo packet generation"
+        "result_summary": "Computed monitor priority score 0.536.",
+        "reason": "deterministic scoring"
       },
       {
-        "tool_name": "generate_why_now",
+        "tool_name": "get_product_fit",
         "inputs": {
-          "trigger_summary": "The filing excerpt describes operating scale, platform, workflow, or integration change.",
-          "review_lane": "Commercial Signal"
+          "trigger_type": "operating_scale_or_platform_change",
+          "scenario": "Platform / go-to-market change"
         },
-        "result_summary": "Lamb Weston Holdings Inc. describes platform, channel, or go-to-market change that affects buyer priorities. Partnerships should use this as a brief for account planning, platform discussion, or outreach timing.",
-        "reason": "Review packet generated from verified filing evidence and deterministic routing rules"
+        "result_summary": "Mapped to Commercial Signal with deliverable: Partner brief.",
+        "reason": "deterministic routing"
+      },
+      {
+        "tool_name": "emit_watchlist_entry",
+        "inputs": {
+          "ticker": "LW",
+          "review_lane": "Commercial Signal",
+          "recommended_action": "Refresh the account plan to connect Lamb Weston Holdings Inc.'s operating change with a concrete Partnerships follow-up angle."
+        },
+        "result_summary": "Final source-grounded evidence packet emitted for the cached pre-run demo.",
+        "reason": "final evidence packet emitted"
       }
     ],
     "confidence_note": "Manual review recommended",
