@@ -2,7 +2,7 @@
 
 An agentic workflow prototype that reads verified public EDGAR excerpts and turns operationally significant disclosures into evidence-grounded review packets.
 
-The public version is framed as a healthcare commercial, partnerships, strategy, operations, trust/security, and compliance review queue. It demonstrates a transferable regulated-workflow pattern: signal extraction, deterministic scoring and routing, evidence validation, human-review gates, and audit traces.
+The demo defaults to healthcare-market examples because regulated workflows make evidence, routing, and auditability easy to inspect. The underlying pattern is sector-agnostic: signal extraction, deterministic scoring and routing, evidence validation, human-review gates, and audit traces.
 
 ## Demo Preview
 
@@ -23,6 +23,8 @@ The app ships with a pre-run review queue for fast evaluation without API keys, 
 ## Why It Matters
 
 Regulated operations teams often need to notice material changes buried in long, language-heavy source documents. This prototype shows a practical AI-builder pattern for that work: use an LLM to extract and synthesize evidence, then use deterministic code to control scoring, routing, fallbacks, and review gates.
+
+The same pattern applies to enterprise GTM operations: monitor market/customer signals, classify what matters, route work to the right operating lane, and produce executive-ready evidence packets instead of another dashboard.
 
 The output is a ranked review queue, not an autonomous decision.
 
